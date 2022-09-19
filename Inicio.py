@@ -20,7 +20,6 @@ with open(css_file) as f:
 with open(resume_file, 'rb') as pdf_file:
     PDFbyte = pdf_file.read()
 
-st.write('test')
 col1, col2 = st.columns(2, gap='small')
 with col1:
     image = Image.open('./images/profile-pic.png')
