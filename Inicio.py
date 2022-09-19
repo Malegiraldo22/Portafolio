@@ -18,7 +18,13 @@ with open(css_file) as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 with open(resume_file, 'rb') as pdf_file:
-    PDFbyte = pdf_file.read()
+    CV = pdf_file.read()
+
+with open(cert_techlabs, 'rb') as pdf_file:
+    CERT = pdf_file.read()
+
+with open(rec_letter, 'rb') as pdf_file:
+    REC = pdf_file.read()
 
 col1, col2 = st.columns(2, gap='small')
 with col1:
@@ -29,7 +35,7 @@ with col2:
     st.subheader('Data Scientist')
     st.download_button(
         label='📄 Descargar CV',
-        data=PDFbyte,
+        data=CV,
         file_name=resume_file.name,
         mime='application/octet-stream',
     )
@@ -99,7 +105,7 @@ st.write('---')
 st.write('💻[Respirable](https://github.com/Malegiraldo22/Respirable)')
 st.download_button(
         label='📄 Descargar Certificado',
-        data=PDFbyte,
+        data=CERT,
         file_name=cert_techlabs.name,
         mime='application/octet-stream',
     )
@@ -126,7 +132,7 @@ st.subheader('Logros')
 st.write('🏆 Community Moderator | Dataquest')
 st.download_button(
         label='📄 Descargar Carta recomendación',
-        data=PDFbyte,
+        data=REC,
         file_name=rec_letter.name,
         mime='application/octet-stream',
     )
