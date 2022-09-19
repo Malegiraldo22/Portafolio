@@ -20,10 +20,10 @@ with open(css_file) as f:
 with open(resume_file, 'rb') as pdf_file:
     PDFbyte = pdf_file.read()
 
-
+st.write('test')
 col1, col2 = st.columns(2, gap='small')
 with col1:
-    image = Image.open('./images/profile-pic_(1).png')
+    image = Image.open('./images/profile-pic.png')
     st.image(image, width=230, output_format='PNG')
 with col2:
     st.title('Alejandro Giraldo')
@@ -52,7 +52,7 @@ st.subheader('Experiencia y Calificaciones')
 st.write(
     """
     - ✔️ 5 Años de experiencia como Ingeniero Ambiental
-    - ✔️ 4 Años de experiencia extrayendo información últil de datos
+    - ✔️ 4 Años de experiencia extrayendo información útil de datos
     - ✔️ Fuerte experiencia práctica y conocimiento en Python
     - ✔️ Buena compresión de los principios estadísticos y sus respectivas aplicaciones
     - ✔️ Excelente jugador de equipo y muestra un fuerte sentido de iniciativa en las tareas a realizar
@@ -75,7 +75,7 @@ st.write(
 st.subheader('Proyectos')
 st.write('💻 [Global Energy consumption and CO2](https://pgrupal13-proyectogrupal-inicio-3klytr.streamlitapp.com/)')
 st.write("""
-Proyecto grupal en Soy Henry. Se analizaron las emisiones de CO2 emitidas por diferentes paises debido a su producción energética.
+Proyecto grupal en Soy Henry. Se analizaron las emisiones de CO2 emitidas por diferentes países debido a su producción energética.
 Se calcularon KPIs para mostrar el impacto de cada país y se desarrollaron diferentes modelos de machine learning para predecir y evaluar las emisiones de CO2 a futuro.
 """)
 st.write('---')
@@ -106,7 +106,7 @@ st.download_button(
     )
 st.write("""
 Proyecto final del Bootcamp #Codeathome de Techlabs. Construí un modelo Random Forest en Python usando la biblioteca Sci-kit Learn que predijo el índice de Calidad del Aire en
-cinco ciudades(Bogotá, Barcelona, Münster, Paris, Stockholm y Stuttgart) con un error cuadrático medio de 5.63, 6.88, 8.10,
+cinco ciudades(Bogotá, Barcelona, Münster, París, Stockholm y Stuttgart) con un error cuadrático medio de 5.63, 6.88, 8.10,
 7.94, 13.77 y 7.50 para cada ciudad
 """)
 
@@ -133,8 +133,8 @@ st.download_button(
     )
 st.write("""
 Moderador de comunidad en el foro de ayuda de Dataquest desde Marzo de 2022. Realizando las siguientes contribuciones
-- ✔️ Respondí más de 36 preguntas resultas de los alumnos relacionadas con Data science, dando siempre explicaciones informativas, al grano, claras y exhaustivas de conceptos complejos usando un lenguaje sencillo y haciendo un seguimiento de esas preguntas
-- ✔️ Revisié 8 proyectos guiados, compartidos por los alumnos y realicé comentarios constructivos y prácticos
+- ✔️ Respondí más de 36 preguntas resultas de los alumnos, relacionadas con Data science, dando siempre explicaciones informativas, al grano, claras y exhaustivas de conceptos complejos usando un lenguaje sencillo y haciendo un seguimiento de esas preguntas
+- ✔️ Revisé 8 proyectos guiados, compartidos por los alumnos y realicé comentarios constructivos y prácticos
 - ✔️ Compartí recursos y documentación adicional junto a ejemplos ilustrativos para profundizar el aprendizaje
 - ✔️ Proporcioné estímulo, motivación y participación productiva en las publicaciones compartidas por otros alumnos
 """)
