@@ -6,7 +6,7 @@ from pathlib import Path
 # --- PATHS ---
 current_dir = Path(__file__).parent if '__file__' in locals() else Path.cwd
 css_file = current_dir / 'static' / 'main.css'
-resume_file = current_dir / 'files' / 'HVM.AlejandroGiraldo.pdf'
+resume_file = current_dir / 'files' / 'HVManuelAlejandroGiraldoRiverosdata.pdf'
 profile_pic = current_dir / 'images' / 'profile_pic.png'
 cert_techlabs = current_dir / 'files' / 'CertTechLabs.pdf'
 rec_letter = current_dir / 'files' / 'recommendationletter.pdf'
@@ -56,7 +56,7 @@ with col6:
 st.subheader('Experiencia y Calificaciones')
 st.write(
     """
-    - ✔️ 5 Años de experiencia como Ingeniero Ambiental
+    - ✔️ +5 Años de experiencia como Ingeniero Ambiental
     - ✔️ 4 Años de experiencia extrayendo información útil de datos
     - ✔️ Fuerte experiencia práctica y conocimiento en Python
     - ✔️ Buena compresión de los principios estadísticos y sus respectivas aplicaciones
@@ -78,6 +78,11 @@ st.write(
 
 # --- Proyectos ---
 st.subheader('Proyectos')
+st.write('💻[Halo Training Bot Data](https://halobottrainingdata.streamlit.app/)')
+st.write("""
+Proyecto personal. Usé los resultados de sesiones de entrenamiento en Halo Infinite de un jugador contra 8 bots para generar un análisis del estado actual del jugador y sus posibles mejoras alimentado por medio de la API de Gemini.
+""")
+st.write('---')
 st.write('💻 [Global Energy consumption and CO2](https://pgrupal13-proyectogrupal-inicio-3klytr.streamlitapp.com/)')
 st.write("""
 Proyecto grupal en Soy Henry. Se analizaron las emisiones de CO2 emitidas por diferentes países debido a su producción energética.
@@ -118,6 +123,35 @@ cinco ciudades(Bogotá, Barcelona, Münster, París, Stockholm y Stuttgart) con 
 
 # --- Experiencia laboral ---
 st.subheader('Experiencia Laboral')
+st.write('NielsenIQ')
+st.write('Analyst Modelling')
+st.write('Abril 2023 - Julio 2023')
+st.write("""
+- ✔️ Evalué las ventas de 5 empresas de retail en Estados Unidos y Canadá utilizando SQL y modelos internos de Nielsen
+- ✔️ Actualicé dashboards para mantener la información de ventas y mercados actualizada
+- ✔️ Resolví problemas e investigaciones solicitadas por parte los clientes con respecto a sus ventas y mercados
+""")
+st.write('---')
+st.write('Alcaldía de Tenjo')
+st.write('Análista de datos | Ingeniero Ambiental')
+st.write('Febrero 2023 - Noviembre 2023')
+st.write("""
+- ✔️ Realicé el seguimiento del Plan de Gestión Integral de Residuos sólidos del municipio, logrando un cumplimiento del 98% de las actividades a realizar
+- ✔️ Eduqué a habitantes y comerciantes del municipio en el adecuado manejo de aceite de cocina usado y su correcta disposición
+- ✔️ Realicé 3 reciclatones logrando recuperar un total de 350 Kg de residuos sólidos aprovechables
+- ✔️ Realicé capacitaciones sobre la separación y disposición adecuada de residuos sólidos en 8 conjuntos residenciales,beneficiando a 480 habitantes.
+""")
+st.write('---')
+st.write('Alcaldía de Tenjo')
+st.write('Análista de datos | Ingeniero Ambiental')
+st.write('Octubre 2022 - Diciembre 2022')
+st.write("""
+- ✔️ Realicé el seguimiento del Plan de Gestión Integral de Residuos sólidos del municipio, logrando un cumplimiento del 95% de las actividades a realizar
+- ✔️ Eduqué a comunidades de bajos ingresos en temas de consumo sostenible, separación y aprovechamiento de residuos sólidos
+- ✔️ Realicé 2 reciclatones logrando recuperar un total de 450 Kg de residuos sólidos aprovechables
+""")
+st.write('---')
+st.write('Gruppo MG')
 st.write('Análista de datos | Ingeniero Ambiental')
 st.write('Septiembre 2017 - Abril 2019')
 st.write("""
