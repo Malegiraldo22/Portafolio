@@ -8,7 +8,7 @@ st.set_page_config(page_title='Alejandro Giraldo Riveros - CV', page_icon='📊'
 # --- PATHS ---
 current_dir = Path(__file__).parent if '__file__' in locals() else Path.cwd
 css_file = current_dir / 'static' / 'main.css'
-resume_file = current_dir / 'files' / 'HVM.AlejandroGiraldo.pdf'
+resume_file = current_dir / 'files' / 'HVManuelAlejandroGiraldoRiverosdata.pdf'
 profile_pic = current_dir / 'images' / 'profile_pic.png'
 cert_techlabs = current_dir / 'files' / 'CertTechLabs.pdf'
 rec_letter = current_dir / 'files' / 'recommendationletter.pdf'
@@ -46,14 +46,6 @@ with col2:
     st.markdown("[![GitHub](https://img.shields.io/badge/GitHub-000?style=flat&logo=github&logoColor=white)](https://github.com/Malegiraldo22) "
                 "[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/magiraldo)")
 
-
-# --- SOBRE MÍ ---
-st.markdown("---")
-st.header("👋 Sobre mí")
-st.write("""
-         Soy un cientifíco de datos e ingeniero ambiental con más de 5 años de experiencia aplicando tecnología para resolver problemas reales.\n
-         Tengo habilidades avanzadas en Python, SQL y visualización de datos. Me apasiona el aprendizaje continuo y la comunicación clara de los resultados
-        """)
 
 # --- MÉTRICAS RÁPIDAS ---
 st.markdown("---")
