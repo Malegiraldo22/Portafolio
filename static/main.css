@@ -1,27 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+body {
+    background-color: #1a1b26;
+    color: #c0caf5;
+    font-family: 'Segoe UI', sans-serif;
+}
 
-
-* {font-family: 'Readex Pro';}
-
+h1, h2, h3 {
+    color: #7aa2f7;
+}
 
 a {
+    color: #bb9af7;
     text-decoration: none;
-    color: rgb(0, 0, 0) !important;
-    font-weight: 500;
 }
 
 a:hover {
-    color: #e62e1b !important;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
-ul {list-style-type: none;}
-
-hr {
-    margin-top: 0px;
-    margin-bottom: 5%;
+.stButton>button {
+    background-color: #7aa2f7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
 }
 
-#MainMenu {visibility: hidden;}
-footer {visibility: hidden;}
-header {visibility: hidden;}
+.stButton>button:hover {
+    background-color: #bb9af7;
+    transition: 0.3s ease;
+}
